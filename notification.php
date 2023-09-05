@@ -30,10 +30,10 @@
     <link rel="stylesheet" href="css/notification.css" />
 </head>
 
-<body data-bs-scheme="light">
+<body data-bs-scheme="auto">
     <?php load_temp("header.php"); ?>
-    <div class="container notification-box light" style="margin-bottom:40%">
-        <div class="container notification-container light">
+    <div class="container notification-box " style="margin-bottom:40%">
+        <div class="container notification-container ">
             <h2>Notifications</h2>
             <div id="notification-list"></div>
         </div>
@@ -47,53 +47,6 @@
     <!-- Include Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script>
-
-    <script>
-    const darkModeSwitch = document.getElementById('dark-mode-switch');
-    const body = document.body;
-    const moonIcon = document.getElementById('moon-icon');
-    const sunIcon = document.getElementById('sun-icon');
-
-    // Function to toggle dark mode styles
-    function toggleDarkMode() {
-        if (darkModeSwitch.checked) {
-            body.setAttribute('data-bs-scheme', 'dark');
-            toggleElementsLightToDark();
-            moonIcon.style.display = 'none';
-            sunIcon.style.display = 'inline-block';
-        } else {
-            body.setAttribute('data-bs-scheme', 'light');
-            // Function to toggle elements from light to dark
-            toggleElementsDarkToLight();
-            moonIcon.style.display = 'inline-block';
-            sunIcon.style.display = 'none';
-        }
-    }
-
-    // Toggle elements from dark to light
-    function toggleElementsDarkToLight() {
-        const elements = document.querySelectorAll('.dark');
-        elements.forEach(element => {
-            element.classList.remove('dark');
-            element.classList.add('light');
-        });
-    }
-
-    // Toggle elements from light to dark
-    function toggleElementsLightToDark() {
-        const elements = document.querySelectorAll('.light');
-        elements.forEach(element => {
-            element.classList.remove('light');
-            element.classList.add('dark');
-        });
-    }
-
-    // Call the function on page load
-    toggleDarkMode();
-
-    // Listen for dark mode switch changes
-    darkModeSwitch.addEventListener('change', toggleDarkMode);
     </script>
 </body>
 
