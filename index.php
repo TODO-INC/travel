@@ -211,23 +211,6 @@ include "libs/load.php";
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $('#searchSpace').on('input', function() {
-            var userInput = $(this).val().toLowerCase();
-            var validValues = $('#datalistOptions option').map(function() {
-                return $(this).val().toLowerCase();
-            }).get();
-
-            if (!validValues.includes(userInput)) {
-                $(this).val(userInput);
-            }
-        });
-    });
-
-
-
-
-
     const darkModeSwitch = document.getElementById('dark-mode-switch');
     const body = document.body;
     const moonIcon = document.getElementById('moon-icon');
@@ -272,95 +255,5 @@ include "libs/load.php";
 
     // Listen for dark mode switch changes
     darkModeSwitch.addEventListener('change', toggleDarkMode);
-    $(document).ready(function() {
-        // Handle button clicks to show the corresponding content
-        $('.btn').on('click', function() {
-            var targetContent = $(this).data('target');
-            $('.content').hide();
-            $('#' + targetContent).show();
-            $('.btn').removeClass('active');
-            $(this).addClass('active');
-        });
-    });
-    const priceRangeInput = document.getElementById('priceRange');
-    const minPriceInput = document.getElementById('minPrice');
-    const maxPriceInput = document.getElementById('maxPrice');
-    priceRangeInput.addEventListener('input', () => {
-        const selectedPrice = priceRangeInput.value;
-        minPriceInput.value = selectedPrice;
-        maxPriceInput.value = selectedPrice === "1000000" ? "1000000+" : selectedPrice;
-    });
-    const button1 = document.getElementById('showList');
-    const button2 = document.getElementById('showMap');
-    const content1 = document.getElementById('content1');
-    const content2 = document.getElementById('content2');
-    button1.addEventListener('click', () => {
-        content1.style.display = 'block';
-        content2.style.display = 'none';
-        button1.classList.add('active');
-        button2.classList.remove('active');
-    });
-    button2.addEventListener('click', () => {
-        content1.style.display = 'none';
-        content2.style.display = 'block';
-        button1.classList.remove('active');
-        button2.classList.add('active');
-    });
-    var map = L.map('map').setView([9.939093, 78.121719], 10);
-    if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            var x = position.coords.latitude;
-            var y = position.coords.longitude;
-            map.setView([x, y], 10);
-            var userMarker = L.marker([x, y], {
-                draggable: true
-            }).addTo(map).bindPopup("Your Location");
-            var userCoordinates = {
-                lat: x,
-                lng: y
-            };
-            var flag = 0;
-            var geocoder = L.Control.geocoder({
-                defaultMarkGeocode: false
-            }).on('markgeocode', function(e) {
-                map.eachLayer(function(layer) {
-                    if (layer instanceof L.Marker) {
-                        map.removeLayer(layer);
-                    }
-                });
-                var marker = L.marker(e.geocode.center, {
-                    draggable: true
-                }).addTo(map);
-                marker.bindPopup(e.geocode.name).openPopup();
-                map.setView(e.geocode.center, 13);
-
-                function updateCoordinates() {
-                    var coordinatesContainer = document.getElementById('coordinates-container');
-                    coordinatesContainer.textContent = marker.getLatLng().lat + ', ' + marker
-                        .getLatLng().lng;
-                    if (flag == 0) {
-                        coordinatesContainer.textContent = userMarker.getLatLng().lat + ', ' +
-                            userMarker.getLatLng().lng;
-                    }
-                }
-                marker.on('move', function(e) {
-                    flag = 1;
-                    if (flag == 1) {
-                        updateCoordinates();
-                    }
-                });
-                updateCoordinates();
-            }).addTo(map);
-        }, function(error) {
-            console.error("Error getting user's location:", error.message);
-        });
-    } else {
-        console.error("Geolocation is not supported in this browser.");
-    }
-    var googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-        maxZoom: 20,
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-    });
-    googleStreets.addTo(map);
     </script>
 </body>
