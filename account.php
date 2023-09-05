@@ -24,22 +24,21 @@ include "libs/load.php";
     <link rel="stylesheet" href="css/account.css" />
 </head>
 
-<body data-bs-scheme="light">
+<body data-bs-scheme="auto">
     <?php load_temp("header.php"); ?>
 
     <div class="p-5 mb-4 rounded-3 jumbo-tron-container">
         <div class="container py-1 jumbo-tron">
-            <h1 class="display-6 fw-bold">Host</h1>
-            <p class="col-md-8 fs-5">Go to profile, <a class="btn btn-primary btn" href="profile.php">Profile</a></p>
+            <h1 class="display-6 fw-bold">Hello,</h1>
         </div>
     </div>
 
     <div class="container-content">
-        <div class="container container-acc py-1 mt-2 light">
+        <div class="container container-acc py-1 mt-2 ">
             <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
                 <!-- Personal Info Card and Modal -->
                 <div class="col">
-                    <button type="button" class="card-button light" data-bs-toggle="modal" data-bs-target="#infoModal">
+                    <button type="button" class="card-button " data-bs-toggle="modal" data-bs-target="#infoModal">
                         <i class="bi bi-person-lines-fill"></i>
                         <h5 class="card-title">Personal Info</h5>
                         <p>Your personal details</p>
@@ -47,7 +46,7 @@ include "libs/load.php";
                     <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content  card-caro light">
+                            <div class="modal-content  card-caro ">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="infoModalLabel">Info</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -87,8 +86,7 @@ include "libs/load.php";
 
                 <!-- Security Policy Card and Modal -->
                 <div class="col">
-                    <button type="button" data-bs-toggle="modal" class="card-button light"
-                        data-bs-target="#securityModal">
+                    <button type="button" data-bs-toggle="modal" class="card-button " data-bs-target="#securityModal">
                         <i class="bi bi-shield-check"></i>
                         <h5 class="card-title">Security Policy</h5>
                         <p>Security policies of the Parko</p>
@@ -96,7 +94,7 @@ include "libs/load.php";
                     <div class="modal fade" id="securityModal" tabindex="-1" aria-labelledby="securityModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content card-caro light">
+                            <div class="modal-content card-caro ">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="securityModalLabel">Security</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -159,8 +157,7 @@ include "libs/load.php";
 
                 <!-- Payments and Payouts Card and Modal -->
                 <div class="col">
-                    <button type="button" data-bs-toggle="modal" class="card-button light"
-                        data-bs-target="#paymentModal">
+                    <button type="button" data-bs-toggle="modal" class="card-button " data-bs-target="#paymentModal">
                         <i class="bi bi-credit-card"></i>
                         <h5 class="card-title">Payments and Payouts</h5>
                         <p>Review payments, payouts methods</p>
@@ -168,7 +165,7 @@ include "libs/load.php";
                     <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content card-caro light">
+                            <div class="modal-content card-caro ">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="paymentModalLabel">Payment</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -202,7 +199,7 @@ include "libs/load.php";
             <!-- Earnings Card and Modal -->
             <div class="row row-cols-1 row-cols-md-3 g-3 mt-2">
                 <div class="col">
-                    <button type="button" data-bs-toggle="modal" class="card-button light" data-bs-target="#savedModal">
+                    <button type="button" data-bs-toggle="modal" class="card-button " data-bs-target="#savedModal">
                         <i class="bi bi-bookmarks"></i>
                         <h5 class="card-title">Saved</h5>
                         <p>You saved park spaces</p>
@@ -210,7 +207,7 @@ include "libs/load.php";
                     <div class="modal fade" id="savedModal" tabindex="-1" aria-labelledby="savedModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content card-caro light">
+                            <div class="modal-content card-caro ">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="savedModalLabel">Saved</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -246,52 +243,6 @@ include "libs/load.php";
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-    const darkModeSwitch = document.getElementById('dark-mode-switch');
-    const body = document.body;
-    const moonIcon = document.getElementById('moon-icon');
-    const sunIcon = document.getElementById('sun-icon');
-
-    // Function to toggle dark mode styles
-    function toggleDarkMode() {
-        if (darkModeSwitch.checked) {
-            body.setAttribute('data-bs-scheme', 'dark');
-            toggleElementsLightToDark();
-            moonIcon.style.display = 'none';
-            sunIcon.style.display = 'inline-block';
-        } else {
-            body.setAttribute('data-bs-scheme', 'light');
-            // Function to toggle elements from light to dark
-            toggleElementsDarkToLight();
-            moonIcon.style.display = 'inline-block';
-            sunIcon.style.display = 'none';
-        }
-    }
-
-    // Toggle elements from dark to light
-    function toggleElementsDarkToLight() {
-        const elements = document.querySelectorAll('.dark');
-        elements.forEach(element => {
-            element.classList.remove('dark');
-            element.classList.add('light');
-        });
-    }
-
-    // Toggle elements from light to dark
-    function toggleElementsLightToDark() {
-        const elements = document.querySelectorAll('.light');
-        elements.forEach(element => {
-            element.classList.remove('light');
-            element.classList.add('dark');
-        });
-    }
-
-    // Call the function on page load
-    toggleDarkMode();
-
-    // Listen for dark mode switch changes
-    darkModeSwitch.addEventListener('change', toggleDarkMode);
-    </script>
 </body>
 
 </html>

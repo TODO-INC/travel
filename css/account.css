@@ -2,36 +2,23 @@ body{
     font-family: 'Albert Sans';
 }
 
-[data-bs-scheme="light"] {
-    background-color: #ffffff;
-}
 
-[data-bs-scheme="dark"] {
-    background-color: #272727;
-    color: #ffffff;
-}
 .container-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container-acc.light {
+.container-acc {
     width: 80%;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #f8f8f8;
 }
-.container-acc.dark {
-    width: 80%;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: black;
-}
 
-.card-button.light {
+
+.card-button {
     display: inline-block;
     padding: 20px;
     border: none;
@@ -42,24 +29,9 @@ body{
     margin: 2px;
     cursor: pointer;
 }
-.card-button.dark {
-    display: inline-block;
-    padding: 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: #48BF91;
-    color: #ffffff;
-    transition: all 0.3s ease;
-    margin: 2px;
-    cursor: pointer;
-}
+
 .card-caro.light{
     background-color: #BADFE7;
-}
-.card-caro.dark{
-    background-color: #0076BE;
-    color:#ffffff;
 }
 
 
