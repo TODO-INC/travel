@@ -27,7 +27,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/booking.css" />
+    <link rel="stylesheet" href="css/plan.css" />
 </head>
 
 <body data-bs-scheme="light">

@@ -1,54 +1,60 @@
 /* Light Mode Styles */
-.light .custom-common-container {
+ .custom-common-container {
     background-color: #F6F6F2;
     border-bottom: 1px solid #e0e0e0;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.light .navbar-nav .nav-link {
+.navbar-brand{
+    color: #388087;
+}
+.navbar-brand:hover{
     color: #388087;
 }
 
-.light .navbar-nav .nav-link:hover {
+ .navbar-nav .nav-link {
+    color: #388087;
+}
+
+ .navbar-nav .nav-link:hover {
     color: #52ab98;
 }
 
-.light .dropdown-menu {
+ .dropdown-menu {
     position: relative;
     background-color: #fff;
     text-decoration: none;
 }
 
-.light .dropdown-menu a {
+ .dropdown-menu a {
     color: #388087;
     text-decoration: none;
     
 }
 
-.light .dropdown-menu a:hover {
+ .dropdown-menu a:hover {
     color: #52ab98;
     text-decoration: none;
 }
 
-.light .tog {
+ .tog {
     color: #52ab98;
 }
 
-.light #moon-icon {
+ #moon-icon {
     color: #6FB3B8;
 }
 
-.light #sun-icon {
+ #sun-icon {
     display: none;
 }
 
-.light .form-check-input[type="checkbox"]:checked {
+ .form-check-input[type="checkbox"]:checked {
     background-color: #48BF91;
     border-color: #48BF91;
 }
 
-.light .form-check-input[type="checkbox"]:not(:checked) {
+ .form-check-input[type="checkbox"]:not(:checked) {
     background-color: #ccc;
     border-color: #ccc;
 }
