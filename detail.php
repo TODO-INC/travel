@@ -24,7 +24,7 @@ include "libs/load.php";
     <!-- Your Custom CSS Files -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/reserve.css">
+    <link rel="stylesheet" href="css/detail.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <!-- Popper.js -->
@@ -269,7 +269,7 @@ include "libs/load.php";
 
 
     <?php load_temp("footer.php"); ?>
-    <script src="js/reserve.js"></script>
+    <script src="js/detail.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
