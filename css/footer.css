@@ -1,0 +1,25 @@
+.light .custom-footer {
+    background-color: #6FB3B8;
+    color: #F6F6F2;
+}
+.light .todo {
+    color: black;
+}
+
+.light .custom-footer a {
+    color: #F6F6F2;
+    font-size: 15px;
+}
+
+/* Dark Mode Styles */
+.dark .custom-footer {
+    background-color: #388087;
+    color: #CCCCCC;
+}
+.dark .todo {
+    color: whitesmoke;
+}
+.dark .custom-footer a {
+    color: #CCCCCC;
+    font-size: 15px;
+}

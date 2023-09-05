@@ -1,0 +1,145 @@
+/* Light Mode Styles */
+ .custom-common-container {
+    background-color: #F6F6F2;
+    border-bottom: 1px solid #e0e0e0;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand{
+    color: #388087;
+}
+.navbar-brand:hover{
+    color: #388087;
+}
+
+ .navbar-nav .nav-link {
+    color: #388087;
+}
+
+ .navbar-nav .nav-link:hover {
+    color: #52ab98;
+}
+
+ .dropdown-menu {
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ .dropdown-menu a {
+    color: #388087;
+    text-decoration: none;
+    
+}
+
+ .dropdown-menu a:hover {
+    color: #52ab98;
+    text-decoration: none;
+}
+
+ .tog {
+    color: #52ab98;
+}
+
+ #moon-icon {
+    color: #6FB3B8;
+}
+
+ #sun-icon {
+    display: none;
+}
+
+ .form-check-input[type="checkbox"]:checked {
+    background-color: #48BF91;
+    border-color: #48BF91;
+}
+
+ .form-check-input[type="checkbox"]:not(:checked) {
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+/* Dark Mode Styles */
+.dark .custom-common-container {
+    background-color: #333333;
+    border-bottom: 1px solid #444444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark .navbar-nav .nav-link {
+    color: #CCCCCC;
+}
+
+.dark .navbar-nav .nav-link:hover {
+    color: #AACCBB;
+}
+
+.dark .dropdown-menu {
+    background-color: #388087;
+    text-decoration: none;
+}
+
+.dark .dropdown-menu a {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+.dark .dropdown-menu a:hover {
+    color: #AACCBB;
+    text-decoration: none;
+}
+
+.dark .tog {
+    color: #AACCBB;
+}
+
+.dark #moon-icon {
+    display: none;
+}
+
+.dark #sun-icon {
+    color: #CCCCCC;
+    display: inline-block;
+}
+
+.dark .form-check-input[type="checkbox"]:checked {
+    background-color: #116644;
+    border-color: #116644;
+}
+
+.dark .form-check-input[type="checkbox"]:not(:checked) {
+    background-color: #444;
+    border-color: #444;
+}
+
+/* Light Mode Styles */
+/* .light .navbar-nav {
+    flex-direction: column; 
+    align-items: center; 
+}
+
+
+.dark .navbar-nav {
+    flex-direction: column;
+    align-items: center; 
+} */
+
+.light .navbar-nav {
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+}
+.dark .navbar-nav {
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.dark .navbar-toggler-icon {
+    background-color: #CCCCCC; /* Change this to a color that contrasts well with your dark background */
+    border: none; /* Remove border for better visibility */
+    padding: 0.25rem; /* Adjust padding for a better appearance */
+    width: 1.5em; /* Adjust the width if needed */
+    height: 1.5em; /* Adjust the height if needed */
+}
