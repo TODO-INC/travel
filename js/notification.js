@@ -29,10 +29,6 @@ addNotification("This is an new notification. Click to see the full message.");
 addNotification("Another new notification. Click to see the full message.");
 addNotification("This is a new notification. Click to see the full message.");
 addNotification("This is an new notification. Click to see the full message.");
-addNotification("Another new notification. Click to see the full message.");
-addNotification("This is a new notification. Click to see the full message.");
-addNotification("This is an new notification. Click to see the full message.");
-addNotification("Another new notification. Click to see the full message.");
 
 const closeBtn = document.createElement("button");
 closeBtn.classList.add("btn", "btn-danger", "btn-sm", "close-btn");
