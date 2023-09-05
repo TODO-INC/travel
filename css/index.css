@@ -2,14 +2,6 @@ body{
     font-family: 'Albert Sans';
 }
 
-[data-bs-scheme="light"] {
-    background-color: #ffffff;
-}
-
-[data-bs-scheme="dark"] {
-    background-color: #272727;
-    color: #ffffff;
-}
 
 .search-space {
     align-items: center;
