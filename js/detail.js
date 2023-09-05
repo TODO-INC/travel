@@ -1,3 +1,4 @@
+
 function displayRating() {
     const starContainer = document.getElementById('star-container');
     const ratingCount = document.getElementById('rating-count');
