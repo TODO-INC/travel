@@ -1,3 +1,125 @@
 body{
     font-family: 'Albert Sans';
 }
+/* Style for the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the scale */
+.scale-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Style for the pointer */
+.pointer {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e74c3c; /* Red color */
+    border-radius: 50%;
+    top: -5px; /* Adjust position to point to the selected card */
+}
+
+/* Style for the scale */
+.hour-scale {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    position: relative;
+}
+.hour0 {
+    width: calc(100% / 12);
+    border-radius: 32px;
+    text-align: center;
+    background-color: #388087; 
+    color: #fff;
+    padding: 5px;
+}
+
+/* Style for individual hours */
+.hour {
+    width: calc(100% / 12);
+    text-align: center;
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+/* Hover effect */
+.hour:hover {
+    background-color: #e74c3c; /* Red background color on hover */
+}
+
+/* Style for card container */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style for individual cards */
+.card {
+    width: 18rem;
+    margin: 0 10px;
+}
+.plus {
+    background-color: transparent;
+    color: transparent;
+    border-color: transparent;
+}
+
+.plus:hover {
+    color: gray;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.plus:active{
+    color: gray;
+    background-color: gray;
+    border-color: transparent;
+    outline: none; 
+}
+
+.offcanvas-panel {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hide the panel off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add shadow to the panel */
+}
+
+.panel-content {
+    padding: 20px;
+}
+.plus.active {
+    transform: translateX(300px); /* Push the button to the right when the panel is open */
+}
+
+.fixed-bottom-center {
+    position: fixed;
+    bottom: 45px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #52ab98;
+    border-color: #52ab98;
+    border-radius: 32px;
+}
+.fixed-bottom-center:hover{
+    background-color: #388087;
+    border-color: #388087;
+}
