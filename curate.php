@@ -241,7 +241,6 @@ include "libs/load.php";
                             <input type="number" min="1" class="form-control" id="num">
                         </div>
                     </div>
-                    <button class=" btn btn-primary">Book Now</button>
                 </div>
                 <button type="button" class="btn btn-info mb-3">Book</button>
             </div>
@@ -257,7 +256,6 @@ include "libs/load.php";
                             <input type="number" min="1" class="form-control" id="num">
                         </div>
                     </div>
-                    <button class=" btn btn-primary">Book Now</button>
                 </div>
                 <button type="button" class="btn btn-info mb-3">Book</button>
             </div>
