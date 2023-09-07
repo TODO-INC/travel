@@ -11,8 +11,6 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <link rel="shortcut icon" type="image/x-icon" href="../asset/icons/icon.ico" />
-    <title>Parko</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -38,17 +36,15 @@
             <div class="col-lg-4 col-md-6 mb-5 mt-1 book-card">
                 <div class="card ">
                     <div class="card-header">
-                        TN 96 E 3448 <span class="badge bg-success text-white">parked</span>
+                        Ooty <span class="badge bg-success text-white">ongoing</span>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Booking ID : #176-590</p>
-                        <p class="card-text">Vehicle Type : Motor Two Wheeler</p>
-                        <p class="card-text">Booked Date : 04/08/2023</p>
-                        <p class="card-text">Parking Time : 2.00PM - 5.30 PM</p>
-                        <p class="card-text">1.30 Hours Remaining]</p>
-                        <a href="#" class="btn btn-primary" type="button" data-bs-toggle="modal"
-                            data-bs-target="#extendModal">Extend Time</a>
-                        <a href="#" class="btn btn-danger" type="button">HELP</a>
+                        <p class="card-text">Number of persons: 3</p>
+                        <p class="card-text">Start Date : 04/08/2023</p>
+                        <p class="card-text">Start Time : 2.00PM - 5.30 PM</p>
+                        <p class="card-text">Next Destination Boat House</p>
+                        <a href="map.php?lat=9.9315573&lon=78.1022729" class="btn btn-primary"
+                            target="_blank">Directions</a>
                     </div>
                 </div>
             </div>
@@ -56,16 +52,13 @@
             <div class="col-lg-4 col-md-6 mb-5 mt-1 book-card">
                 <div class="card ">
                     <div class="card-header">
-                        TN 96 E 3448 <span class="badge bg-info text-white">yet to go</span>
+                        Munnar<span class="badge bg-info text-white">yet to go</span>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Booking ID : #176-590</p>
-                        <p class="card-text">Vehicle Type : Motor Two Wheeler</p>
-                        <p class="card-text">Booked Date : 04/08/2023</p>
-                        <p class="card-text">Parking Time : 2.00PM - 5.30 PM</p>
-                        <p class="card-text">3.30 Hours]</p>
-                        <a href="map.php?lat=9.9315573&lon=78.1022729" class="btn btn-primary">Directions</a>
-                        <a href="#" class="btn btn-danger" type="button">HELP</a>
+                        <p class="card-text">Number of persons: 5</p>
+                        <p class="card-text">Start Date : 14/09/2023</p>
+                        <p class="card-text">Start Time : 2.00PM - 5.30 PM</p>
+                        <p class="card-text">First Destination : Suicide Point</p>
                     </div>
                 </div>
             </div>
@@ -73,41 +66,14 @@
             <div class="col-lg-4 col-md-6 mb-5 mt-1 book-card">
                 <div class="card ">
                     <div class="card-header">
-                        TN 96 E 3448 <span class="badge bg-secondary text-white">completed</span>
+                        Ladak <span class="badge bg-secondary text-white">completed</span>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Booking ID : #176-590</p>
-                        <p class="card-text">Vehicle Type : Motor Two Wheeler</p>
-                        <p class="card-text">Booked Date : 04/08/2023</p>
-                        <p class="card-text">Parking Time : 2.00PM - 5.30 PM </p>
-                        <p class="card-text">3.30 Hours]</p>
+                        <p class="card-text">Number of persons: 2</p>
+                        <p class="card-text">Start Date : 13/05/2023</p>
                         <a href="#" class="btn btn-primary" type="button" data-bs-toggle="modal"
                             data-bs-target="#reviewModal">Review</a>
-                        <a href="#" class="btn btn-danger" type="button">HELP</a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="extendModal" tabindex="-1" aria-labelledby="extendModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content book-modal ">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="extendModalLabel">Extend</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-
-                    <form class="mb-3">
-                        <label for="userInput" class="form-label">Enter Time to be Extend (minimum 1 hour):</label>
-                        <input type="number" class="form-control" id="userInput" min="1" onchange="calculateValue()">
-                        <label for="calculatedValue" class="form-label">Price :</label>
-                        <input type="text" class="form-control" id="calculatedValue" readonly>
-                        <button type="submit" class="btn btn-info mt-3">Pay & Proceed</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
                 </div>
             </div>
         </div>

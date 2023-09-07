@@ -28,8 +28,34 @@ include "libs/load.php";
 
 <body data-bs-scheme="auto">
     <?php load_temp("header.php"); ?>
-    <div class="container search-space mt-4">
-        TODO BY JEFFEY
+    <div class="container mt-5">
+        <h1>Welcome to TravelMate</h1>
+        <p>Plan your dream vacation with ease. Create a customized tour plan tailored to your
+            preferences and let us assist you throughout your journey.</p>
+    </div>
+
+    <div class="container test mt-5">
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location" placeholder="Enter your destination">
+                </div>
+                <div class="form-group">
+                    <label for="persons">Number of Persons</label>
+                    <input type="number" class="form-control" id="persons" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="start-date">Start Date</label>
+                    <input type="date" class="form-control" id="start-date">
+                </div>
+                <div class="form-group">
+                    <label for="start-time">Start Time</label>
+                    <input type="time" class="form-control" id="start-time">
+                </div>
+                <a type="submit" class="btn btn-primary mt-2 " href="curate.php"> Create Plan</a>
+            </form>
+        </div>
     </div>
     <?php load_temp("footer.php"); ?>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
