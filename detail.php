@@ -9,9 +9,6 @@ include "libs/load.php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="generator" content="Hugo 0.112.5">
-    <title>Parko</title>
-
-    <title>Your Page Title</title>
     <!-- Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -45,13 +42,13 @@ include "libs/load.php";
             <div class="container-fluid jumbo-tron">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-8">
-                        <h1 class="fw-bold">RAM Parkings</h1>
+                        <h1 class="fw-bold">Boat House - Ooty</h1>
                         <div class="rating-info d-flex align-items-center">
                             <div id="rating-container" class="align-items-center">
                                 <span id="star-container"></span>
                                 <span id="rating-count">(1307)</span>
                             </div>
-                            <h6 class="mb-0 ms-2">Madurai, India</h6>
+                            <h6 class="mb-0 ms-2">Ooty - North Lake Road, Ooty, Tamil Nadu 643001</h6>
                         </div>
                     </div>
                     <div class="col-md-4 text-end">
@@ -61,33 +58,33 @@ include "libs/load.php";
                 <div class="container gallery-container mt-3 light">
                     <div class="row gallery">
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="asset/1.jpeg">
-                                <img class="img-fluid" src="asset/1.jpeg">
+                            <a href="asset/a1.jpeg">
+                                <img class="img-fluid" src="asset/a1.jpeg">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="asset/2.jpeg">
-                                <img class="img-fluid" src="asset/2.jpeg">
+                            <a href="asset/a2.jpeg">
+                                <img class="img-fluid" src="asset/a2.jpeg">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="asset/3.jpeg">
-                                <img class="img-fluid" src="asset/3.jpeg">
+                            <a href="asset/a3.jpeg">
+                                <img class="img-fluid" src="asset/a3.jpeg">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="asset/4.jpeg">
-                                <img class="img-fluid" src="asset/4.jpeg">
+                            <a href="asset/a4.jpeg">
+                                <img class="img-fluid" src="asset/a4.jpeg">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="asset/5.jpeg">
-                                <img class="img-fluid" src="asset/5.jpeg">
+                            <a href="asset/a5.jpeg">
+                                <img class="img-fluid" src="asset/a5.jpeg">
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-4">
-                            <a href="asset/6.jpeg">
-                                <img class="img-fluid" src="asset/6.jpeg">
+                            <a href="asset/a6.jpeg">
+                                <img class="img-fluid" src="asset/a6.jpeg">
                             </a>
                         </div>
                     </div>
@@ -97,12 +94,10 @@ include "libs/load.php";
     </div>
 
     <div class="container mt-1">
-        <h2 class="mb-1">Host - RAM</h2>
         <hr>
-        <a><span class="badge bg-primary">Private Residential</span> <span class="badge bg-info">Subscription</span>
-            <span class="badge bg-success">Current</span></a>
-        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem consequatur culpa
-            nesciunt tempore expedita quibusdam maiores, unde quidem.</p>
+        <p class="lead">Boating on this man-made lake is an elegant way to enjoy the serene view and rich biodiversity;
+            taking a slow pedal boat ride or a rowboat will make the aesthetic experience extra addictive. The
+            restaurants will give an opportunity to relish the delicacies of Nilgiris.</p>
         <hr>
 
 
@@ -113,47 +108,63 @@ include "libs/load.php";
                 Amenities
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><img src="../asset/icons/cctv.png" style="height:25px;"> Security Camera
-                </li>
-                <li class="list-group-item"><img src="../asset/icons/dust.png" style="height:25px;"> Dust Free Zone</li>
-                <li class="list-group-item"><img src="../asset/icons/air.png" style="height:25px;"> Free Air</li>
-                <li class="list-group-item"><img src="../asset/icons/wash.png" style="height:25px;"> Vehicle Wash</li>
-                <li class="list-group-item"><img src="../asset/icons/cover.png" style="height:25px;"> Four Wheeler Cover
-                </li>
-                <li class="list-group-item"><img src="../asset/icons/lock.png" style="height:25px;"> Two Wheeler Lock
-                </li>
-                <li class="list-group-item"><img src="../asset/icons/charger.png" style="height:25px;"> E-Vehicle Charge
-                    Point</li>
-                <li class="list-group-item"><img src="../asset/icons/helmet.png" style="height:25px;"> Helmet Rack</li>
-                <li class="list-group-item"><img src="../asset/icons/vault.png" style="height:25px;"> Locker Facility
-                </li>
+                <li class="list-group-item"><i class="bi bi-droplet-half"></i> &nbsp;Drinking Water</li>
+                <li class="list-group-item"><i class="bi bi-phone-fill"></i> &nbsp;Selfie Point </li>
+                <li class="list-group-item"><i class="bi bi-camera-fill"></i>&nbsp;Camera allowed</li>
+                <li class="list-group-item"><i class="bi bi-p-circle-fill"></i>&nbsp;Parking Area</li>
             </ul>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 mb-2">
-                    <div class="custom-card-left">
-                        <div class="card-body">
-                            <h4>Address</h4>
-                            <p>644 A2/5 6th street,</p>
-                            <p>MAdurai City</p>
-                            <p>Madurai</p>
-                            <p>Pin : 628501</p>
-                        </div>
-                    </div>
+            <div class="card cost">
+                <div class="card-header">
+                    <h5 class="card-title">Timing & Ticket Price</h5>
                 </div>
-                <div class="col-md-9 mb-2">
-                    <div class="custom-card-right">
-                        <div class="card-body">
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis hic ipsum repellat
-                                illo sit iure aspernatur eos quasi sed laborum placeat eum, perferendis provident maxime
-                                eius, enim numquam adipisci voluptatibus.</h4>
-                        </div>
-                    </div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Boat Name</th>
+                                <th>Types of Boats</th>
+                                <th>Tariff (Per Boat)</th>
+                                <th>Tariff (Per Ticket)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pedal Boat - 2 Seater</td>
+                                <td>30 minutes</td>
+                                <td>Rs.300</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Pedal Boat - 4 Seater</td>
+                                <td>30 minutes</td>
+                                <td>Rs.400</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Row Boat - 4 Seater</td>
+                                <td>30 minutes</td>
+                                <td>Rs.450</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Row Boat - 6 Seater</td>
+                                <td>30 minutes</td>
+                                <td>Rs.500</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Motor Boat - 8 Seater</td>
+                                <td>20 minutes</td>
+                                <td>Rs.900</td>
+                                <td>Rs.100</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-
 
         <div class="container">
             <h3 style="text-align:center;" class="mt-3 mb-3">Reviews</h3>
@@ -163,7 +174,7 @@ include "libs/load.php";
                         <div class="card-body">
                             <div class="container">
                                 <h4 class="bg-1 mt-1">Ram</h4>
-                                <p class="bg-2">Easy to park</p>
+                                <p class="bg-2">Best Place to enjoy with your family</p>
                             </div>
                         </div>
                     </div>
@@ -172,8 +183,8 @@ include "libs/load.php";
                     <div class="card mb-2 comment-container light">
                         <div class="card-body">
                             <div class="container">
-                                <h4 class="bg-1 mt-1">Ram</h4>
-                                <p class="bg-2">Safe parking</p>
+                                <h4 class="bg-1 mt-1">Saran</h4>
+                                <p class="bg-2">Clean pond and pollution free area</p>
                             </div>
                         </div>
                     </div>
@@ -184,8 +195,8 @@ include "libs/load.php";
                     <div class="card mb-2 comment-container light">
                         <div class="card-body">
                             <div class="container">
-                                <h4 class="bg-1 mt-1">Ram</h4>
-                                <p class="bg-2">Easy to park</p>
+                                <h4 class="bg-1 mt-1">Ananth</h4>
+                                <p class="bg-2">Must visit place in ooty</p>
                             </div>
                         </div>
                     </div>
@@ -194,8 +205,8 @@ include "libs/load.php";
                     <div class="card mb-2 comment-container light">
                         <div class="card-body">
                             <div class="container">
-                                <h4 class="bg-1 mt-1">Ram</h4>
-                                <p class="bg-2">Safe parking</p>
+                                <h4 class="bg-1 mt-1">Narayanan</h4>
+                                <p class="bg-2">Safe place to enjoy your boat ride</p>
                             </div>
                         </div>
                     </div>
@@ -203,70 +214,6 @@ include "libs/load.php";
             </div>
         </div>
     </div>
-    <div class="container checkout mb-3 mt-3">
-        <div class="fixed">
-            <button class="btn btn-danger" type="button" data-bs-toggle="modal"
-                data-bs-target="#checkoutModal">Checkout</button>
-        </div>
-    </div>
-
-
-
-
-    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modal-checkout">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="checkoutModalLabel">Reservation Form</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="vehicleType" class="form-label">Select Vehicle Type:</label>
-                            <select class="form-select" id="vehicleType" required>
-                                <option value="heavy">Heavy Four Wheeler</option>
-                                <option value="normal">Four Wheeler</option>
-                                <option value="two-wheeler">Motor Two Wheeler</option>
-                                <option value="bicycle">Bicycle</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="startDate" class="form-label">Start Date:</label>
-                            <input type="date" class="form-control" id="startDate" min="<?= date('Y-m-d') ?>" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="startTime" class="form-label">Start Time:</label>
-                            <input type="time" class="form-control" id="startTime"
-                                min="<?= date('H:i', strtotime('+1 hour')) ?>" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="endDate" class="form-label">End Date:</label>
-                            <input type="date" class="form-control" id="endDate"
-                                min="<?= date('Y-m-d', strtotime('+1 day')) ?>" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="endTime" class="form-label">End Time:</label>
-                            <input type="time" class="form-control" id="endTime"
-                                min="<?= date('H:i', strtotime('+2 hours')) ?>" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="cost" class="form-label">Cost:</label>
-                            <input type="text" class="form-control" id="cost" readonly>
-                        </div>
-                        <button type="button" class="btn btn-primary" onclick="calculateCost()">Calculate Cost</button>
-
-                </div>
-                <div class="modal-footer" style="display: flex;justify-content: center;">
-                    <button type="submit" class="btn btn-info">Proceed</button>
-                </div>>
-                </form>
-            </div>
-        </div>
-    </div>
-
-
-
 
     <?php load_temp("footer.php"); ?>
     <script src="js/detail.js"></script>

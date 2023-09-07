@@ -123,3 +123,38 @@ body{
     background-color: #F6F6F2;
     color: #272727;
   }
+
+  .card .cost {
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.card-header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.table {
+  border: none;
+}
+
+.table th, .table td {
+  border: none;
+  padding: .75rem;
+  vertical-align: top;
+}
+
+.table thead th {
+  background-color: #4CAF50;
+  color: white;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.table tbody tr {
+  background-color: #0076BE;
+
+}
