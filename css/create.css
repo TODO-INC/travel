@@ -1,3 +1,18 @@
 body{
     font-family: 'Albert Sans';
 }
+.form-container {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+.test{
+    border-width: 15px;
+    border-color: black;
+}
+
+.btn{
+    margin-left:48%;
+}
