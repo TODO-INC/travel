@@ -1,3 +1,8 @@
 body{
     font-family: 'Albert Sans';
 }
+
+.container{
+    text-align: center;
+    height: 500px;
+}
